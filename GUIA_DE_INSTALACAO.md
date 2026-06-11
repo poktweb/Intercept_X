@@ -1,8 +1,10 @@
 # Pokt Intercept X — Guia de Instalação
 
-**Versão:** 0.1.0
+**Versão:** 0.2.0
 
-Esta pasta contém os instaladores oficiais e este guia. Use-a para distribuir o app (repositório de releases, download direto, etc.).
+Esta pasta contém os instaladores oficiais e este guia.
+
+Repositório: **https://github.com/poktweb/Intercept_X**
 
 ---
 
@@ -10,15 +12,16 @@ Esta pasta contém os instaladores oficiais e este guia. Use-a para distribuir o
 
 | Arquivo | Plataforma |
 |---------|------------|
-| `Pokt-Intercept-X-Setup-0.1.0.exe` | Windows 10/11 (64-bit) |
-| `pokt-intercept-x_0.1.0_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `Pokt-Intercept-X-Setup-0.2.0.exe` | Windows 10/11 (64-bit) |
+| `pokt-intercept-x_0.2.0_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `latest.yml` | Metadados de auto-update (Settings → Atualizações) |
 | `GUIA_DE_INSTALACAO.md` | Este guia |
 
 ---
 
 ## Windows
 
-1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.1.0.exe`** desta pasta.
+1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.2.0.exe`** desta pasta.
 2. Execute o instalador (duplo clique).
 3. Siga o assistente — você pode escolher o diretório de instalação.
 4. Atalhos serão criados na **Área de Trabalho** e no **Menu Iniciar**.
@@ -32,11 +35,11 @@ Esta pasta contém os instaladores oficiais e este guia. Use-a para distribuir o
 
 ## Linux (Debian / Ubuntu)
 
-1. Baixe ou copie **`pokt-intercept-x_0.1.0_amd64.deb`** desta pasta.
+1. Baixe ou copie **`pokt-intercept-x_0.2.0_amd64.deb`** desta pasta.
 2. No terminal, na pasta do arquivo:
 
 ```bash
-sudo dpkg -i pokt-intercept-x_0.1.0_amd64.deb
+sudo dpkg -i pokt-intercept-x_0.2.0_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -47,6 +50,14 @@ pokt-intercept-x
 ```
 
 **Requisitos:** amd64, GTK3, dependências listadas no pacote `.deb`.
+
+---
+
+## Novidades v0.2.0
+
+- **Recon Avançado Pro** — motor 100% nativo (subdomínios, diretórios, JS, API, secrets/tokens)
+- **pix-pathhunter** — filtro inteligente de status HTTP (200, 301, 403…) e anti-rate-limit
+- Correções de sidecar e auto-update
 
 ---
 
