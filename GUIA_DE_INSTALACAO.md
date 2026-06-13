@@ -1,6 +1,6 @@
 # Pokt Intercept X — Guia de Instalação
 
-**Versão:** 0.3.2
+**Versão:** 0.3.4
 
 Esta pasta contém os instaladores oficiais e este guia.
 
@@ -12,8 +12,8 @@ Repositório: **https://github.com/poktweb/Intercept_X**
 
 | Arquivo | Plataforma |
 |---------|------------|
-| `Pokt-Intercept-X-Setup-0.3.2.exe` | Windows 10/11 (64-bit) |
-| `pokt-intercept-x_0.3.2_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `Pokt-Intercept-X-Setup-0.3.4.exe` | Windows 10/11 (64-bit) |
+| `pokt-intercept-x_0.3.4_amd64.deb` | Linux Debian / Ubuntu / derivados |
 | `latest.yml` | Metadados de auto-update (Settings → Atualizações) |
 | `GUIA_DE_INSTALACAO.md` | Este guia |
 
@@ -21,7 +21,7 @@ Repositório: **https://github.com/poktweb/Intercept_X**
 
 ## Windows
 
-1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.3.2.exe`** desta pasta.
+1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.3.4.exe`** desta pasta.
 2. Execute o instalador (duplo clique).
 3. Siga o assistente — você pode escolher o diretório de instalação.
 4. Atalhos serão criados na **Área de Trabalho** e no **Menu Iniciar**.
@@ -35,11 +35,11 @@ Repositório: **https://github.com/poktweb/Intercept_X**
 
 ## Linux (Debian / Ubuntu)
 
-1. Baixe ou copie **`pokt-intercept-x_0.3.2_amd64.deb`** desta pasta.
+1. Baixe ou copie **`pokt-intercept-x_0.3.4_amd64.deb`** desta pasta.
 2. No terminal, na pasta do arquivo:
 
 ```bash
-sudo dpkg -i pokt-intercept-x_0.3.2_amd64.deb
+sudo dpkg -i pokt-intercept-x_0.3.4_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -53,11 +53,11 @@ pokt-intercept-x
 
 ---
 
-## Novidades v0.3.2
+## Novidades v0.3.4
 
-- **Correção do login** no app desktop com o site oficial (CORS)
-- **Pro/Pro Plus ativados automaticamente** após pagamento no site
-- Team / Workspace compartilhado — colaboração multiusuário
+- **Tools e Testing liberados no plano Basic** — Security Tools, Toolkit, Fuzzer, Scanner, Crawler e OAST
+- **Browser integrado** movido para a seção Proxy e disponível no plano Basic
+- Melhorias no catálogo de plugins e Arsenal de ferramentas
 - Auto-update apontando para o Site oficial (`Settings → Atualizações`)
 
 ---
