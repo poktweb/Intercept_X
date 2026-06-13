@@ -1,6 +1,6 @@
 # Pokt Intercept X — Guia de Instalação
 
-**Versão:** 0.3.0
+**Versão:** 0.3.1
 
 Esta pasta contém os instaladores oficiais e este guia.
 
@@ -12,8 +12,8 @@ Repositório: **https://github.com/poktweb/Intercept_X**
 
 | Arquivo | Plataforma |
 |---------|------------|
-| `Pokt-Intercept-X-Setup-0.3.0.exe` | Windows 10/11 (64-bit) |
-| `pokt-intercept-x_0.3.0_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `Pokt-Intercept-X-Setup-0.3.1.exe` | Windows 10/11 (64-bit) |
+| `pokt-intercept-x_0.3.1_amd64.deb` | Linux Debian / Ubuntu / derivados |
 | `latest.yml` | Metadados de auto-update (Settings → Atualizações) |
 | `GUIA_DE_INSTALACAO.md` | Este guia |
 
@@ -21,7 +21,7 @@ Repositório: **https://github.com/poktweb/Intercept_X**
 
 ## Windows
 
-1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.3.0.exe`** desta pasta.
+1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.3.1.exe`** desta pasta.
 2. Execute o instalador (duplo clique).
 3. Siga o assistente — você pode escolher o diretório de instalação.
 4. Atalhos serão criados na **Área de Trabalho** e no **Menu Iniciar**.
@@ -35,11 +35,11 @@ Repositório: **https://github.com/poktweb/Intercept_X**
 
 ## Linux (Debian / Ubuntu)
 
-1. Baixe ou copie **`pokt-intercept-x_0.3.0_amd64.deb`** desta pasta.
+1. Baixe ou copie **`pokt-intercept-x_0.3.1_amd64.deb`** desta pasta.
 2. No terminal, na pasta do arquivo:
 
 ```bash
-sudo dpkg -i pokt-intercept-x_0.3.0_amd64.deb
+sudo dpkg -i pokt-intercept-x_0.3.1_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -53,13 +53,13 @@ pokt-intercept-x
 
 ---
 
-## Novidades v0.3.0
+## Novidades v0.3.1
 
-- **Arsenal de Ferramentas** — loja com instalação do GitHub (subfinder, httpx, dirsearch, nuclei e mais)
-- **Pipelines** — encadeamento de ferramentas (ex.: subfinder | httpx)
-- **Aba Achados** — histórico de execuções salvo por ferramenta, com exportação `.txt`
-- **Saída completa** — log integral no modal da ferramenta e nos achados
-- Melhorias de recon avançado, filtros de diretório e estabilidade geral
+- **Team / Workspace compartilhado** — colaboração multiusuário
+- **Findings compartilhados**, comentários em requests, notas colaborativas e @menções
+- **Locks** no Repeater para evitar edição simultânea
+- **Basic:** até 2 pessoas no workspace · **Pro/Pro Plus:** membros ilimitados
+- Auto-update apontando para o Site oficial
 
 ---
 
@@ -68,37 +68,11 @@ pokt-intercept-x
 1. **Certificado HTTPS** — em **Settings → Certificados**, instale o certificado CA do proxy para interceptar HTTPS sem erros de SSL.
 2. **Proxy** — configure o navegador ou use o **Browser** integrado; proxy padrão: `127.0.0.1:8080`.
 3. **Projeto** — crie um projeto em **Projetos** para organizar histórico e escopos.
-4. **Conta (opcional)** — faça login na sidebar para sincronizar plano Pro/Basic.
+4. **Conta** — faça login em **Settings → Conta** para licença Pro e workspace Team.
 
 ---
 
-## Desinstalar
+## Suporte
 
-### Windows
-
-**Configurações → Aplicativos → Pokt Intercept X → Desinstalar**
-
-Seus dados (projetos, histórico, sessão) permanecem em `%APPDATA%\pokt-intercept-x` até você apagá-los manualmente.
-
-### Linux
-
-```bash
-sudo apt remove pokt-intercept-x
-```
-
-Dados do usuário ficam em `~/.config/pokt-intercept-x` (ou pasta equivalente do Electron).
-
----
-
-## Problemas comuns
-
-| Problema | Solução |
-|----------|---------|
-| Backend não inicia | Verifique se as portas **9090** e **8080** estão livres |
-| HTTPS com erro de certificado | Instale o CA em Settings e confie no proxy |
-| App não abre no Linux | Execute `pokt-intercept-x` no terminal e leia a mensagem de erro |
-| SmartScreen no Windows | Confirme que baixou desta pasta oficial; assinatura digital em breve |
-
----
-
-**Suporte:** contato@pokt.dev
+- Site: https://pokt-intercept-x-site.vercel.app
+- E-mail: contato@pokt.dev
