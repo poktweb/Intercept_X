@@ -1,6 +1,6 @@
 # Pokt Intercept X — Guia de Instalação
 
-**Versão:** 0.3.8
+**Versão:** 0.3.9
 
 Esta pasta contém os instaladores oficiais e este guia.
 
@@ -12,8 +12,8 @@ Site: **https://pokt-intercept-x-site.vercel.app**
 
 | Arquivo | Plataforma |
 |---------|------------|
-| `Pokt-Intercept-X-Setup-0.3.8.exe` | Windows 10/11 (64-bit) |
-| `pokt-intercept-x_0.3.8_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `Pokt-Intercept-X-Setup-0.3.9.exe` | Windows 10/11 (64-bit) |
+| `pokt-intercept-x_0.3.9_amd64.deb` | Linux Debian / Ubuntu / derivados |
 | `latest.yml` | Metadados de auto-update (Settings → Atualizações) |
 | `GUIA_DE_INSTALACAO.md` | Este guia |
 
@@ -21,7 +21,7 @@ Site: **https://pokt-intercept-x-site.vercel.app**
 
 ## Windows
 
-1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.3.8.exe`** desta pasta (ou em [Download no site](https://pokt-intercept-x-site.vercel.app/download)).
+1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.3.9.exe`** desta pasta (ou em [Download no site](https://pokt-intercept-x-site.vercel.app/download)).
 2. Execute o instalador (duplo clique).
 3. Siga o assistente — você pode escolher o diretório de instalação.
 4. Atalhos serão criados na **Área de Trabalho** e no **Menu Iniciar**.
@@ -35,11 +35,11 @@ Site: **https://pokt-intercept-x-site.vercel.app**
 
 ## Linux (Debian / Ubuntu)
 
-1. Baixe ou copie **`pokt-intercept-x_0.3.8_amd64.deb`** desta pasta.
+1. Baixe ou copie **`pokt-intercept-x_0.3.9_amd64.deb`** desta pasta.
 2. No terminal, na pasta do arquivo:
 
 ```bash
-sudo dpkg -i pokt-intercept-x_0.3.8_amd64.deb
+sudo dpkg -i pokt-intercept-x_0.3.9_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -110,6 +110,13 @@ As ferramentas são **baixadas/instaladas pelo app** na aba Arsenal (Loja). Na p
 Documentação completa no site: [Containers & Arsenal](https://pokt-intercept-x-site.vercel.app/docs/containers)
 
 ---
+
+## Novidades v0.3.9
+
+- **Hardening de segurança** — Electron sandbox, auth da API local, token criptografado
+- **Proxy de autenticação** — sessão do site sem expor JWT ao renderer
+- **Docker.sock opt-in** — terminal Arsenal mais seguro por padrão (Configurações)
+- Validação reforçada em URLs, Arsenal, IA, webhooks e busca FTS
 
 ## Novidades v0.3.8
 
