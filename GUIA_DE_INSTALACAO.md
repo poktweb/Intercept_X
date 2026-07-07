@@ -1,6 +1,6 @@
 # Pokt Intercept X — Guia de Instalação
 
-**Versão:** 0.4.2
+**Versão:** 0.4.3
 
 Esta pasta contém os instaladores oficiais e este guia.
 
@@ -12,8 +12,8 @@ Site: **https://www.poktinterceptx.site**
 
 | Arquivo | Plataforma |
 |---------|------------|
-| `Pokt-Intercept-X-Setup-0.4.2.exe` | Windows 10/11 (64-bit) |
-| `pokt-intercept-x_0.4.2_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `Pokt-Intercept-X-Setup-0.4.3.exe` | Windows 10/11 (64-bit) |
+| `pokt-intercept-x_0.4.3_amd64.deb` | Linux Debian / Ubuntu / derivados |
 | `latest.yml` | Metadados de auto-update (Settings → Atualizações) |
 | `GUIA_DE_INSTALACAO.md` | Este guia |
 
@@ -21,7 +21,7 @@ Site: **https://www.poktinterceptx.site**
 
 ## Windows
 
-1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.4.2.exe`** desta pasta (ou em [Download no site](https://www.poktinterceptx.site/download)).
+1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.4.3.exe`** desta pasta (ou em [Download no site](https://www.poktinterceptx.site/download)).
 2. Execute o instalador (duplo clique).
 3. Siga o assistente — você pode escolher o diretório de instalação.
 4. Atalhos serão criados na **Área de Trabalho** e no **Menu Iniciar**.
@@ -35,11 +35,11 @@ Site: **https://www.poktinterceptx.site**
 
 ## Linux (Debian / Ubuntu)
 
-1. Baixe ou copie **`pokt-intercept-x_0.4.2_amd64.deb`** desta pasta.
+1. Baixe ou copie **`pokt-intercept-x_0.4.3_amd64.deb`** desta pasta.
 2. No terminal, na pasta do arquivo:
 
 ```bash
-sudo dpkg -i pokt-intercept-x_0.4.2_amd64.deb
+sudo dpkg -i pokt-intercept-x_0.4.3_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -110,6 +110,13 @@ As ferramentas são **baixadas/instaladas pelo app** na aba Arsenal (Loja). Na p
 Documentação completa no site: [Containers & Arsenal](https://www.poktinterceptx.site/docs/containers)
 
 ---
+
+## Novidades v0.4.3
+
+- **Anotações** — prévia de imagens nas evidências, colar prints (Ctrl+V) e múltiplos arquivos de anotação por pasta
+- **Arsenal** — editar, renomear e excluir pipelines custom salvos
+- **Terminal Arsenal** — colar com Ctrl+V e botão direito
+- **Evidências** — painel mais compacto, menos rolagem
 
 ## Novidades v0.4.2
 
