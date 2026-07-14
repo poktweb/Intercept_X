@@ -1,6 +1,6 @@
 # Pokt Intercept X — Guia de Instalação
 
-**Versão:** 0.4.6
+**Versão:** 0.4.7
 
 Esta pasta contém os instaladores oficiais e este guia.
 
@@ -12,8 +12,8 @@ Site: **https://www.poktinterceptx.site**
 
 | Arquivo | Plataforma |
 |---------|------------|
-| `Pokt-Intercept-X-Setup-0.4.6.exe` | Windows 10/11 (64-bit) |
-| `pokt-intercept-x_0.4.6_amd64.deb` | Linux Debian / Ubuntu / derivados |
+| `Pokt-Intercept-X-Setup-0.4.7.exe` | Windows 10/11 (64-bit) |
+| `pokt-intercept-x_0.4.7_amd64.deb` | Linux Debian / Ubuntu / derivados |
 | `latest.yml` | Metadados de auto-update (Settings → Atualizações) |
 | `GUIA_DE_INSTALACAO.md` | Este guia |
 
@@ -21,7 +21,7 @@ Site: **https://www.poktinterceptx.site**
 
 ## Windows
 
-1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.4.6.exe`** desta pasta (ou em [Download no site](https://www.poktinterceptx.site/download)).
+1. Baixe ou copie **`Pokt-Intercept-X-Setup-0.4.7.exe`** desta pasta (ou em [Download no site](https://www.poktinterceptx.site/download)).
 2. Execute o instalador (duplo clique).
 3. Siga o assistente — você pode escolher o diretório de instalação.
 4. Atalhos serão criados na **Área de Trabalho** e no **Menu Iniciar**.
@@ -35,11 +35,11 @@ Site: **https://www.poktinterceptx.site**
 
 ## Linux (Debian / Ubuntu)
 
-1. Baixe ou copie **`pokt-intercept-x_0.4.6_amd64.deb`** desta pasta.
+1. Baixe ou copie **`pokt-intercept-x_0.4.7_amd64.deb`** desta pasta.
 2. No terminal, na pasta do arquivo:
 
 ```bash
-sudo dpkg -i pokt-intercept-x_0.4.6_amd64.deb
+sudo dpkg -i pokt-intercept-x_0.4.7_amd64.deb
 sudo apt-get install -f
 ```
 
@@ -111,6 +111,17 @@ Documentação completa no site: [Containers & Arsenal](https://www.poktintercep
 
 ---
 
+## Novidades v0.4.7
+
+- **Findings unificados** — deduplicação, evidências, triagem e reteste
+- **Doctor integrado** — diagnóstico de sidecar, CA, Docker e Ollama
+- **Guardrails operacionais** — escopo obrigatório, limites e auditoria de jobs
+- **UX integrada** — Ctrl+K, Enviar para…, Central de Jobs e Engagement Workspace
+- **Evidence Vault** — evidências com hash e relatórios HTML/Markdown/PDF/DOCX
+- **Testes avançados** — regressões via CLI (`pix`), Autorização diferencial e schema drift
+- **SDK de plugins** — sandbox, assinatura e pacotes colaborativos criptografados
+- **HTTP/3 experimental** — disponível via feature flag (desativado por padrão)
+
 ## Novidades v0.4.6
 
 - **Arsenal Pro** — cabeçalho exibe o plano correto (Pro / Pro Plus / Pro Team) em vez do texto do Free
@@ -128,52 +139,17 @@ Documentação completa no site: [Containers & Arsenal](https://www.poktintercep
 - **Anotações** — prévia de imagens nas evidências, colar prints (Ctrl+V) e múltiplos arquivos de anotação por pasta
 - **Arsenal** — editar, renomear e excluir pipelines custom salvos
 - **Terminal Arsenal** — colar com Ctrl+V e botão direito
-- **Evidências** — painel mais compacto, menos rolagem
-
-## Novidades v0.4.2
-
-- **Domínio oficial** — poktinterceptx.site (auth, licença, checkout e auto-update)
-- **UI refinada** — HttpEditor, busca global, sitemap e confirmações de host
-- **Painel de segurança do Arsenal** nas Configurações
-- **Proteção IPC reforçada** e links externos seguros no frontend
-- Validação e sanitização ampliadas em handlers da API local
-
-## Novidades v0.3.9
-
-- **Hardening de segurança** — Electron sandbox, auth da API local, token criptografado
-- **Proxy de autenticação** — sessão do site sem expor JWT ao renderer
-- **Docker.sock opt-in** — terminal Arsenal mais seguro por padrão (Configurações)
-- Validação reforçada em URLs, Arsenal, IA, webhooks e busca FTS
-
-## Novidades v0.3.8
-
-- **AI Security Assistant** — chat unificado com histórico de conversas salvo
-- **IA executa ferramentas** — peça subfinder + httpx e receba relatório no chat
-- Download de relatórios `.md` e saída `.txt` direto na conversa
-- Progresso em tempo real durante execução de pipelines no Arsenal
-
-## Novidades v0.3.7
-
-- **Correção:** Dockerfiles do Arsenal incluídos no instalador (.exe / .deb)
-- Instalação de ferramentas (httpx, subfinder, nuclei…) funciona sem clonar o repositório
-
-## Novidades v0.3.6
-
-- **Arsenal expandido** — 160+ ferramentas CLI via containers Docker/Podman
-- **Terminal Bash integrado** — sessão persistente no Arsenal com wrappers das tools
-- **Pipelines customizados** — monte e salve pipelines personalizados
-- **Correções de terminal no Windows** — conexão estável, saída alinhada, reconexão
-- **Auto-update** via site oficial (`Settings → Atualizações`)
 
 ---
 
-## Após instalar (primeiro uso)
+## Primeiro uso
 
-1. **Instale Docker Desktop** (ou Podman) — veja seção Arsenal acima.
-2. **Certificado HTTPS** — em **Settings → Certificados**, instale o certificado CA do proxy para interceptar HTTPS sem erros de SSL.
-3. **Proxy** — configure o navegador ou use o **Browser** integrado; proxy padrão: `127.0.0.1:8080`.
-4. **Projeto** — crie um projeto em **Projetos** para organizar histórico e escopos.
-5. **Conta** — faça login em **Settings → Conta** para licença Pro e workspace Team.
+1. Abra o app → **Settings** → instale o **certificado CA** (necessário para HTTPS).
+2. Defina um **Scope** (alvo do teste).
+3. Inicie o **Proxy** (porta 8080 por padrão).
+4. Abra o **Browser** integrado ou configure o sistema/aplicação para usar o proxy.
+5. Use **Intercept** / **HTTP History** para inspecionar tráfego.
+6. (Opcional) Inicie o Docker Desktop e abra o **Arsenal** para tools CLI.
 
 ---
 
@@ -181,5 +157,4 @@ Documentação completa no site: [Containers & Arsenal](https://www.poktintercep
 
 - Site: https://www.poktinterceptx.site
 - Download: https://www.poktinterceptx.site/download
-- Containers: https://www.poktinterceptx.site/docs/containers
-- E-mail: contato@pokt.dev
+- Docs: https://www.poktinterceptx.site/docs/containers

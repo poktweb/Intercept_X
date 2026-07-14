@@ -1,8 +1,8 @@
-version: 0.4.6
+version: 0.4.7
 files:
-  - url: Pokt-Intercept-X-Setup-0.4.6.exe
-    sha512: EVTZt7yWODDwKNtiAYr6RK12vmra9EsP4u+pD1ssMTqN853O68lyyh1W5QGA5o4Vs/5UjGUkieTMwjcsb7Ah8g==
-    size: 91870640
-path: Pokt-Intercept-X-Setup-0.4.6.exe
-sha512: EVTZt7yWODDwKNtiAYr6RK12vmra9EsP4u+pD1ssMTqN853O68lyyh1W5QGA5o4Vs/5UjGUkieTMwjcsb7Ah8g==
-releaseDate: '2026-07-11T03:54:51.199Z'
+  - url: Pokt-Intercept-X-Setup-0.4.7.exe
+    sha512: x7Jfj/5rCYyc700PLoUM8U2MkVU1xp0oGu/mipxreMYAOQqwK7OpTP9Kb2Tyd3kjnEUVCk3rHB6QKe+IOo0oew==
+    size: 94508175
+path: Pokt-Intercept-X-Setup-0.4.7.exe
+sha512: x7Jfj/5rCYyc700PLoUM8U2MkVU1xp0oGu/mipxreMYAOQqwK7OpTP9Kb2Tyd3kjnEUVCk3rHB6QKe+IOo0oew==
+releaseDate: '2026-07-14T06:59:31.208Z'
